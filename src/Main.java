@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        int price[] = {150, 300, 250, 600, 200, 2_000, 6_000, 500, 70_000};
+        long price[] = {150, 300, 250, 600, 200, 2_000, 6_000, 500, 70_000};
         SalesManager SalesManager = new SalesManager(price);
 
         System.out.println("Sale max = " + (SalesManager.max()));
