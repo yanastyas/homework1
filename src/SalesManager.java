@@ -24,5 +24,23 @@ public class SalesManager {
         }
         return min;
     }
+
+    public long stat() {
+        int stat = 0;
+        int a = 0;
+        int b = 0;
+        int c = 0;
+        for (long sale : sales) {
+            if (min() == sale && b == 0) {
+                b++;
+            } else if (max() == sale && c == 0) {
+                c++;
+            } else {
+                stat += sale;
+                a++;
+            }
+        }
+        return (stat / a);
+    }
 }
 

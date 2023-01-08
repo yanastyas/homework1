@@ -7,5 +7,7 @@ public class Main {
 
         System.out.println("Sale min = " + (SalesManager.min()));
 
+        System.out.println("Sale stat = " + (SalesManager.stat()));
+
     }
 }
